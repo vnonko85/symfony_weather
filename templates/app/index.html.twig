@@ -1,0 +1,29 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello AppController!{% endblock %}
+
+{% form_theme form 'bootstrap_4_layout.html.twig' %}
+
+{% block body %}
+<div class="example-wrapper">
+    <h1>Погода</h1>
+
+    {{ form(form) }} 
+</div>
+
+<div id="weather">
+    <table class="table table-bordered table-striped table-hover">
+        <thead class="thead-inverse">
+        <tr>
+            <th>Date</th>
+            <th>Temp</th>
+            <th>Humidity</th>
+            <th>Pressure</th>
+        </tr>
+        <tbody>
+        </tbody>
+        
+        </thead>
+    </table>
+</div>
+{% endblock %}
